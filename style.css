@@ -11,17 +11,48 @@ body{
          text-align: center;
         line-height: 200px; /* ayusin ang line-height upang gawing vertical center ang text */
     }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Open Sans", sans-serif;
+    }
+    
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      width: 100%;
+      padding: 0 10px;
+    }
+    
+    body::before {
+      
+    }
     .content {
-        height: 580px;
-        background-image: url('asset/imgs/scol.jpg'); /* Ilagay ang URL ng iyong background image */
-        background-size: 100% 100%; /* I-set ang background image na mag-fill sa buong sukat ng #container */
-        background-repeat: no-repeat; /* Ito ay para maiwasan ang pag-repeated ng background image */
-        display: flex; /* Gamitin ang flexbox para i-center ang elemento */
-        justify-content: center; /* I-center ang elemento horizontally */
-        align-items: center; /* I-center ang elemento vertically */
-        flex-direction: column;
-        opacity: .8;
-        
+      display: flex; /* Gamitin ang flexbox para i-center ang elemento */
+      justify-content: center; /* I-center ang elemento horizontally */
+      align-items: center; /* I-center ang elemento vertically */
+      flex-direction: column;
+      opacity: .8;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      /* background: url("https://www.codingnepalweb.com/demos/create-glassmorphism-login-form-html-css/hero-bg.jpg"), #000; */
+      background-image: url('asset/imgs/school 2.png'); 
+      /* background-position: center;
+      background-size: cover; */
+      background-size: 100% 100%; /* I-set ang background image na mag-fill sa buong sukat ng #container */
+            background-repeat: no-repeat; /* Ito ay para maiwasan ang pag-repeated ng background image */
+           
+      
+  }
+  .logo {
+      max-width: 150px;
+      height: 130px;
+      margin-bottom: 5px;
     }
     .logo {
         max-width: 150px;
@@ -89,15 +120,21 @@ body{
         line-height: 200px; /* ayusin ang line-height upang gawing vertical center ang text */
     }
     .content {
-        height: 720px;
-        background-image: url('asset/imgs/scol.jpg'); /* Ilagay ang URL ng iyong background image */
-        background-size: 100% 100%; /* I-set ang background image na mag-fill sa buong sukat ng #container */
-        background-repeat: no-repeat; /* Ito ay para maiwasan ang pag-repeated ng background image */
-        display: flex; /* Gamitin ang flexbox para i-center ang elemento */
-        justify-content: center; /* I-center ang elemento horizontally */
-        align-items: center; /* I-center ang elemento vertically */
-        flex-direction: column;
-        opacity: .8;
+      display: flex; /* Gamitin ang flexbox para i-center ang elemento */
+      justify-content: center; /* I-center ang elemento horizontally */
+      align-items: center; /* I-center ang elemento vertically */
+      flex-direction: column;
+      opacity: .8;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      /* background: url("https://www.codingnepalweb.com/demos/create-glassmorphism-login-form-html-css/hero-bg.jpg"), #000; */
+      background-image: url('asset/imgs/school 2.png'); 
+      /* background-position: center;
+      background-size: cover; */
+      background-size: 100% 100%; /* I-set ang background image na mag-fill sa buong sukat ng #container */
+            background-repeat: no-repeat; /* Ito ay para maiwasan ang pag-repeated ng background image */
         
     }
     .logo {

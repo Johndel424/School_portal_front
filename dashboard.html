@@ -60,17 +60,43 @@
 <!--sidebar end-->
 
 <div class="content">
-    <!-- <div class="card">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+<!-- <div class="card-list">
+    <div class="card-item" id="border">
+        <img src="asset/imgs/document.png" alt="Card Image">
+            <h3>DOCUMENTS</h3>
     </div>
-    <div class="card">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+</div> -->
+    <div class="card-list">
+        <a href="#" class="card-item">
+            <img src="asset/imgs/attendance (1).png" alt="Card Image">
+            <!-- <span class="developer">Developer</span> -->
+            <h3>ATTENDANCE</h3>
+            <!-- <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div> -->
+        </a>
+        <a href="#" class="card-item">
+            <img src="asset/imgs/notications.png" alt="Card Image">
+            <h3>NOTIFICATIONS</h3>
+        </a>
+        <a href="#" class="card-item">
+            <img src="asset/imgs/profile (1).png" alt="Card Image">
+            <h3>PROFILE</h3>
+        </a>
+        <a href="#" class="card-item">
+            <img src="asset/imgs/grades (1).png" alt="Card Image">
+            <h3>GRADES</h3>
+        </a>
+        <a href="#" class="card-item">
+            <img src="asset/imgs/attendance (1).png" alt="Card Image">
+            <h3>ATTENDANCE</h3>
+        </a>
+        <a href="#" class="card-item">
+            <img src="asset/imgs/document.png" alt="Card Image">
+            <h3>DOCUMENTS</h3>
+        </a>
     </div>
-    <div class="card">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-    </div> -->
-    <!-- <div class="border">
-        <h1>Welcome Back, <br>Joaquin!</h1>
+        <!-- <h1>Welcome Back, <br>Joaquin!</h1>
         <h2>Today is November 20, 2023 - 9:00AM</h2>
         <div class="side-pic">
             <img src="asset/imgs/boy.png" alt="">
@@ -125,7 +151,7 @@
                 <h1>ATTENDANCE</h1>
             </div>
         </div>
-    </div> -->
+    </div> --> 
 </div>
 <!-- Add this script after your HTML content or in the head section -->
 <script>
@@ -145,6 +171,111 @@
 
 
 </script>
+<style>
 
+body {
+    background: #ecececdb;
+}
+#border {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    background-color: #205c20;
+}
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    max-width: 1250px;
+    margin: 15px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card-list .card-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+}
+
+.card-list .card-item:hover {
+    border: 2px solid #000;
+}
+
+.card-list .card-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card-list span {
+    display: inline-block;
+    background: #F7DFF5;
+    margin-top: 32px;
+    padding: 8px 15px;
+    font-size: 0.75rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.card-list .developer {
+    background-color: #F7DFF5; 
+    color: #B22485;
+}   
+
+.card-list .designer {
+    background-color: #d1e8ff;
+    color: #2968a8;
+}
+h3{
+    text-align: center;
+}
+
+.card-list .editor {
+    background-color: #d6f8d6; 
+    color: #205c20;
+}
+
+.card-item h3 {
+    color: #000;
+    font-size: 1.438rem;
+    margin-top: 28px;
+    font-weight: 600;
+}
+
+.card-item .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-35deg);
+    height: 40px;
+    width: 40px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-top: 40px;
+    transition: 0.2s ease;
+}
+
+.card-list .card-item:hover .arrow  {
+    background: #000;
+    color: #fff; 
+}
+
+@media (max-width: 1200px) {
+    .card-list .card-item {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .card-list {
+        margin: 0 auto;
+    }
+}
+</style>
   </body>
 </html>
