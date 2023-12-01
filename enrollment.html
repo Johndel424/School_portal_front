@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoverable Sidebar Menu HTML CSS & JavaScript</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  
+    <!-- Boxicons CSS -->
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+<!--header area start-->
+<header>
+    <!-- <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+    </label>
+    <div class="left_area">
+        <h3>Go<span>Snippets</span></h3>
+    </div>
+    <div class="right_area">
+        <a href="#" class="logout_btn">Logout</a>
+    </div> -->
+</header>
+<!--header area end-->
+<!--mobile navigation bar start-->
+<div class="mobile_nav">
+    <div class="nav_bar">
+        <img src="asset/imgs/FRAME.png" class="mobile_profile_image" alt="">
+        <i id="mobile_nav_icon" class="fa fa-bars nav_btn"></i>
+    </div>
+    <div class="mobile_nav_items">
+        <a href="dashboard.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+        <a href="calendar.html"><i class="fas fa-calendar"></i><span>Calendar</span></a>
+        <a href="student.html"><i class="fas fa-user"></i><span>Student</span></a>
+        <a href="enrollment.html"><i class="fas fa-th"></i><span>Enrollment</span></a>
+        <a href="faq.html"><i class="fas fa-info-circle"></i><span>FAQ</span></a>
+          </div>
+</div>
+<!--mobile navigation bar end-->
+<!--sidebar start-->
+<div class="sidebar">
+    <div class="profile_info">
+        <img src="asset/imgs/FRAME.png" class="profile_image" alt="">
+        <h4>Joaquin Santos</h4>
+    </div>
+    <a href="dashboard.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+    <a href="calendar.html"><i class="fas fa-calendar"></i><span>Calendar</span></a>
+    <a href="student.html"><i class="fas fa-user"></i><span>Student</span></a>
+    <a href="enrollment.html"><i class="fas fa-th"></i><span>Enrollment</span></a>
+    <a href="faq.html"><i class="fas fa-info-circle"></i><span>FAQ</span></a>
+</div>
+<!--sidebar end-->
+
+<div class="content">
+    <div class="content-div faq" id="enrollment">
+        <div class="container">
+            <h1>Student Enrollment</h1>
+            <form action="#">
+                <div class="form first">
+                    <div class="details personal">
+                        <span class="title">Personal Details</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Enter your name" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Date of Birth</label>
+                                <input type="date" placeholder="Enter birth date" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Email</label>
+                                <input type="text" placeholder="Enter your email" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Mobile Number</label>
+                                <input type="number" placeholder="Enter mobile number" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Gender</label>
+                                <select required>
+                                    <option disabled selected>Select gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Others</option>
+                                </select>
+                            </div>
+                            <div class="input-field">
+                                <label>Age</label>
+                                <input type="number" placeholder="Enter your Age" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details ID">
+                        <span class="title">Identity Details</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Section</label>
+                                <input type="text" placeholder="Enter section" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Year Level</label>
+                                <input type="number" placeholder="Enter year level" required>
+                            </div>
+                            <div class="input-field">
+                                <label>ID Number</label>
+                                <input type="number" placeholder="Enter id number" required>
+                            </div>
+                            <!-- <div class="input-field">
+                                <label>Issued year</label>
+                                <input type="text" placeholder="Enter issued year" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Issued Date</label>
+                                <input type="date" placeholder="Enter your issued date" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Expiry Date</label>
+                                <input type="date" placeholder="Enter expiry date" required>
+                            </div> -->
+                        </div>
+                        <button class="nextBtn">
+                            <span class="btnText">Next</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div> 
+                </div>
+                <div class="form second">
+                    <div class="details address">
+                        <span class="title">Address Details</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Address Type</label>
+                                <input type="text" placeholder="Permanent or Temporary" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Nationality</label>
+                                <input type="text" placeholder="Enter nationality" required>
+                            </div>
+                            <div class="input-field">
+                                <label>State</label>
+                                <input type="text" placeholder="Enter your state" required>
+                            </div>
+                            <div class="input-field">
+                                <label>District</label>
+                                <input type="text" placeholder="Enter your district" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Block Number</label>
+                                <input type="number" placeholder="Enter block number" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Ward Number</label>
+                                <input type="number" placeholder="Enter ward number" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details family">
+                        <span class="title">Family Details</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Father Name</label>
+                                <input type="text" placeholder="Enter father name" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Mother Name</label>
+                                <input type="text" placeholder="Enter mother name" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Grandfather</label>
+                                <input type="text" placeholder="Enter grandfther name" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Grandmother </label>
+                                <input type="text" placeholder="Enter Grandmother name" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Father in Law</label>
+                                <input type="text" placeholder="Father in law name" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Mother in Law</label>
+                                <input type="text" placeholder="Mother in law name" required>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <div class="backBtn">
+                                <i class="uil uil-navigator"></i>
+                                <span class="btnText">Back</span>
+                            </div>
+                            
+                            <button class="sumbit">
+                                <span class="btnText">Submit</span>
+                                <i class="uil uil-navigator"></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+            </form>
+        </div>
+</div> 
+</div>
+  </body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+       var navItems = document.querySelector('.mobile_nav_items');
+       var navIcon = document.getElementById('mobile_nav_icon');
+   
+       navIcon.addEventListener('click', function () {
+           // Toggle the display property
+           if (navItems.style.display === 'none' || navItems.style.display === '') {
+               navItems.style.display = 'block';
+           } else {
+               navItems.style.display = 'none';
+           }
+       });
+   });
+   
+   
+   </script>

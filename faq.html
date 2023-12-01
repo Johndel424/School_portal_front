@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoverable Sidebar Menu HTML CSS & JavaScript</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  
+    <!-- Boxicons CSS -->
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+<!--header area start-->
+<header>
+    <!-- <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+    </label>
+    <div class="left_area">
+        <h3>Go<span>Snippets</span></h3>
+    </div>
+    <div class="right_area">
+        <a href="#" class="logout_btn">Logout</a>
+    </div> -->
+</header>
+<!--header area end-->
+<!--mobile navigation bar start-->
+<div class="mobile_nav">
+    <div class="nav_bar">
+        <img src="asset/imgs/FRAME.png" class="mobile_profile_image" alt="">
+        <i id="mobile_nav_icon" class="fa fa-bars nav_btn"></i>
+    </div>
+    <div class="mobile_nav_items">
+        <a href="dashboard.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+        <a href="calendar.html"><i class="fas fa-calendar"></i><span>Calendar</span></a>
+        <a href="student.html"><i class="fas fa-user"></i><span>Student</span></a>
+        <a href="enrollment.html"><i class="fas fa-th"></i><span>Enrollment</span></a>
+        <a href="faq.html"><i class="fas fa-info-circle"></i><span>FAQ</span></a>
+          </div>
+</div>
+<!--mobile navigation bar end-->
+<!--sidebar start-->
+<div class="sidebar">
+    <div class="profile_info">
+        <img src="asset/imgs/FRAME.png" class="profile_image" alt="">
+        <h4>Joaquin Santos</h4>
+    </div>
+    <a href="dashboard.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+    <a href="calendar.html"><i class="fas fa-calendar"></i><span>Calendar</span></a>
+    <a href="student.html"><i class="fas fa-user"></i><span>Student</span></a>
+    <a href="enrollment.html"><i class="fas fa-th"></i><span>Enrollment</span></a>
+    <a href="faq.html"><i class="fas fa-info-circle"></i><span>FAQ</span></a>
+</div>
+<!--sidebar end-->
+
+<div class="content">
+    <div class="content-div faq" id="faq">
+        <div class="accordion ">
+            <div class="accordion-item">
+            <div class="accordion-item-header">
+            How to change  password?
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                To change your password, please follow these step procedures.
+                    Goto account setting
+                    Click the "change password" tab
+                    Enter your current password.
+                    Enter your new password.
+                    Re-enter your new password to confirm.
+                    Save the new password.
+                    Please take note that your password will expire exaclty 1 month, please change your password regularly.
+                            </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <div class="accordion-item-header">
+            How to change my user photo
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                To change your user photo, please follow these step procedures.
+                Goto account setting
+                Click the "change avatar" tab
+                select an image you want to upload
+                Click the submit button to confirm image.
+                Please take note that the system allows only an image file format with size not greater than 1mb.
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <div class="accordion-item-header">
+            How to update personal info
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                Lorem ipsum dolor sit amet. Aut eius amet aut dolor odit et possimus aperiam qui deserunt voluptatum ad voluptas voluptas. Non quasi nobis ex iusto dolores et debitis voluptatem aut rerum ducimus et mollitia cumque aut earum molestiae sit laboriosam libero? Aut illum placeat ad vitae eius et reiciendis modi et magni inventore ut optio aliquam est voluptatem animi qui placeat nisi. In dolore culpa ea quia sunt ab exercitationem aperiam sed quibusdam dolores et odio beatae qui alias sint eos totam perferendis.
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <div class="accordion-item-header">
+                User agreement
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                Lorem ipsum dolor sit amet. Aut eius amet aut dolor odit et possimus aperiam qui deserunt voluptatum ad voluptas voluptas. Non quasi nobis ex iusto dolores et debitis voluptatem aut rerum ducimus et mollitia cumque aut earum molestiae sit laboriosam libero? Aut illum placeat ad vitae eius et reiciendis modi et magni inventore ut optio aliquam est voluptatem animi qui placeat nisi. In dolore culpa ea quia sunt ab exercitationem aperiam sed quibusdam dolores et odio beatae qui alias sint eos totam perferendis.
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <div class="accordion-item-header">
+            Policies
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                Lorem ipsum dolor sit amet. Aut eius amet aut dolor odit et possimus aperiam qui deserunt voluptatum ad voluptas voluptas. Non quasi nobis ex iusto dolores et debitis voluptatem aut rerum ducimus et mollitia cumque aut earum molestiae sit laboriosam libero? Aut illum placeat ad vitae eius et reiciendis modi et magni inventore ut optio aliquam est voluptatem animi qui placeat nisi. In dolore culpa ea quia sunt ab exercitationem aperiam sed quibusdam dolores et odio beatae qui alias sint eos totam perferendis.
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+  </body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+       var navItems = document.querySelector('.mobile_nav_items');
+       var navIcon = document.getElementById('mobile_nav_icon');
+   
+       navIcon.addEventListener('click', function () {
+           // Toggle the display property
+           if (navItems.style.display === 'none' || navItems.style.display === '') {
+               navItems.style.display = 'block';
+           } else {
+               navItems.style.display = 'none';
+           }
+       });
+   });
+   const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+accordionItemHeaders.forEach(accordionItemHeader => {
+  accordionItemHeader.addEventListener("click", event => {
+    
+    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+    
+    const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+    if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+      currentlyActiveAccordionItemHeader.classList.toggle("active");
+      currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+    }
+
+    accordionItemHeader.classList.toggle("active");
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    if(accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    }
+    else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+    
+  });
+});
+   
+   </script>

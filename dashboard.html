@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  
+    <title>Hoverable Sidebar Menu HTML CSS & JavaScript</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Boxicons CSS -->
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- <input type="checkbox" id="check"> -->
+<!--header area start-->
+<header>
+    <!-- <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+    </label>
+    <div class="left_area">
+        <h3>Go<span>Snippets</span></h3>
+    </div> -->
+    <!-- <div class="right_area">
+        <a href="#" class="logout_btn">Logout</a>
+    </div> -->
+</header>
+<!--header area end-->
+<!--mobile navigation bar start-->
+<div class="mobile_nav">
+    <div class="nav_bar">
+        <img src="asset/imgs/FRAME.png" class="mobile_profile_image" alt="">
+        <i id="mobile_nav_icon" class="fa fa-bars nav_btn"></i>
+    </div>
+    <div class="mobile_nav_items">
+        <a href="dashboard.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+        <a href="calendar.html"><i class="fas fa-calendar"></i><span>Calendar</span></a>
+        <a href="student.html"><i class="fas fa-user"></i><span>Student</span></a>
+        <a href="enrollment.html"><i class="fas fa-th"></i><span>Enrollment</span></a>
+        <a href="faq.html"><i class="fas fa-info-circle"></i><span>FAQ</span></a>
+          </div>
+</div>
+<!--mobile navigation bar end-->
+<!--sidebar start-->
+<div class="sidebar">
+    <div class="profile_info">
+        <img src="asset/imgs/FRAME.png" class="profile_image" alt="">
+        <h4>Joaquin Santos</h4>
+    </div>
+    <a href="dashboard.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+    <a href="calendar.html"><i class="fas fa-calendar"></i><span>Calendar</span></a>
+    <a href="student.html"><i class="fas fa-user"></i><span>Student</span></a>
+    <a href="enrollment.html"><i class="fas fa-th"></i><span>Enrollment</span></a>
+    <a href="faq.html"><i class="fas fa-info-circle"></i><span>FAQ</span></a>
+</div>
+<!--sidebar end-->
+<!--sidebar end-->
+
+<div class="content">
+    <!-- <div class="card">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
+    <div class="card">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
+    <div class="card">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div> -->
+    <!-- <div class="border">
+        <h1>Welcome Back, <br>Joaquin!</h1>
+        <h2>Today is November 20, 2023 - 9:00AM</h2>
+        <div class="side-pic">
+            <img src="asset/imgs/boy.png" alt="">
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="icon">
+                <img src="asset/imgs/profile.png" alt="">
+            </div>
+            <div class="label">
+                <h1>PROFILE</h1>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="icon">
+                <img src="asset/imgs/grades.png" alt="">
+            </div>
+            <div class="label">
+                <h1>GRADES</h1>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="icon">
+                <img src="asset/imgs/documents.png" alt="">
+            </div>
+            <div class="label">
+                <h1>DOCUMENTS</h1>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="icon">
+                <img src="asset/imgs/enrollment.png" alt="">
+            </div>
+            <div class="label">
+                <h1>ENROLLMENT</h1>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="icon">
+                <img src="asset/imgs/notif.png" alt="">
+            </div>
+            <div class="label">
+                <h1>NOTIFICTIONS</h1>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="icon">
+                <img src="asset/imgs/attendance.png" alt="">
+            </div>
+            <div class="label">
+                <h1>ATTENDANCE</h1>
+            </div>
+        </div>
+    </div> -->
+</div>
+<!-- Add this script after your HTML content or in the head section -->
+<script>
+ document.addEventListener('DOMContentLoaded', function () {
+    var navItems = document.querySelector('.mobile_nav_items');
+    var navIcon = document.getElementById('mobile_nav_icon');
+
+    navIcon.addEventListener('click', function () {
+        // Toggle the display property
+        if (navItems.style.display === 'none' || navItems.style.display === '') {
+            navItems.style.display = 'block';
+        } else {
+            navItems.style.display = 'none';
+        }
+    });
+});
+
+
+</script>
+
+  </body>
+</html>

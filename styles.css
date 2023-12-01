@@ -1,0 +1,546 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    z-index: 1;
+    position: fixed;
+    padding: 20px;
+    width: calc(100% - 0%);
+    top: 0;
+    height: 30px;
+    background-image: url('asset/imgs/school_bg.png'); /* Ilagay ang URL ng iyong background image */
+    background-size: 100% 100%; /* I-set ang background image na mag-fill sa buong sukat ng #container */
+    background-repeat: no-repeat; /* Ito ay para maiwasan ang pag-repeated ng background image */
+}
+
+.left_area h3 {
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.left_area span {
+    color: #19B3D3;
+}
+
+.logout_btn {
+    padding: 5px;
+    background: #19B3D3;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.logout_btn:hover {
+    background: #0B87A6;
+}
+
+.sidebar {
+    z-index: 1;
+    top: 0;
+    background-color: #006F0B;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: calc(100% - 9%);
+    transition: 0.5s;
+    transition-property: left;
+    overflow-y: auto;
+}
+
+.profile_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sidebar .profile_info .profile_image {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.sidebar .profile_info h4 {
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.sidebar a:hover {
+    background: #19B3D3;
+}
+
+.sidebar i {
+    padding-right: 10px;
+}
+
+label #sidebar_btn {
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover {
+    color: #19B3D3;
+}
+
+#check:checked~.sidebar {
+    left: -185px;
+}
+
+#check:checked~.sidebar a span {
+    display: none;
+}
+
+#check:checked~.sidebar a {
+    font-size: 20px;
+    margin-left: 165px;
+    width: 100%;
+}
+
+.content {
+    width: (100% - 250px);
+    margin-top: 60px;
+    padding: 20px;
+    margin-left: 250px;
+    background: url(background.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+#check:checked~.content {
+    margin-left: 60px;
+}
+
+#check:checked~.sidebar .profile_info {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.mobile_nav {
+    display: none;
+}
+
+.content .card p {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 780px) {
+    .sidebar {
+        display: none;
+    }
+
+    #sidebar_btn {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 10px 20px;
+        transition: 0s;
+    }
+
+    #check:checked~.content {
+        margin-left: 0;
+    }
+
+    .mobile_nav {
+        display: block;
+        width: calc(100% - 0%);
+    }
+
+    .nav_bar {
+      background-color: #006F0B;
+        width: (100% - 0px);
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .nav_bar .mobile_profile_image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .nav_bar .nav_btn {
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+        transition: 0.5s;
+        transition-property: color;
+    }
+
+    .nav_bar .nav_btn:hover {
+        color: #19B3D3;
+    }
+
+    .mobile_nav_items {
+      background-color: #006F0B;
+        display: none;
+    }
+
+    .mobile_nav_items a {
+        color: #fff;
+        display: block;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 60px;
+        text-decoration: none;
+        box-sizing: border-box;
+        transition: 0.5s;
+        transition-property: background;
+    }
+
+    .mobile_nav_items a:hover {
+        background: #19B3D3;
+    }
+
+    .mobile_nav_items i {
+        padding-right: 10px;
+    }
+
+    .active {
+        display: block;
+    }
+}
+/* style sa reegistration */
+.enrollment{
+    min-height: 100vh;
+    /* display: flex; */
+    align-items: center;
+    justify-content: end;
+    display: none;
+  }
+  .container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+  }
+  .container header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #006F0B;
+  }
+  .container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .container form .form{
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s ease;
+  }
+  .container form .form.second{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+  }
+  form.secActive .form.second{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+  form.secActive .form.first{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+  }
+  .container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+  }
+  .container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+  }
+  .input-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+  }
+  .input-field input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+  }
+  .input-field input :focus,
+  .input-field select:focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+  }
+  .input-field select,
+  .input-field input[type="date"]{
+    color: #707070;
+  }
+  .input-field input[type="date"]:valid{
+    color: #333;
+  }
+  .container form button, .backBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #006F0B;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .container form .btnText{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  form button:hover{
+    background-color: #006F0B;
+  }
+  form button i,
+  form .backBtn i{
+    margin: 0 6px;
+  }
+  form .backBtn i{
+    transform: rotate(180deg);
+  }
+  form .buttons{
+    display: flex;
+    align-items: center;
+  }
+  form .buttons button , .backBtn{
+    margin-right: 14px;
+  }
+  @media (max-width: 750px) {
+    .container form{
+        overflow-y: scroll;
+    }
+    .container form::-webkit-scrollbar{
+       display: none;
+    }
+    form .fields .input-field{
+        width: calc(100% / 2 - 15px);
+    }
+  }
+  @media (max-width: 550px) {
+    form .fields .input-field{
+        width: 100%;
+    }
+  }
+  /* style sa reegistration */
+  .border{
+    width: 80%; 
+    max-width: 1000px; 
+    margin: 1% auto; 
+    height: 200px;
+    border-radius: 20px;
+    position: absolute;
+    left: 20%;
+    background-color: #00BA13;
+    
+  }
+  .border h1{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: start;
+  margin-inline-start: 40px;
+  font-size: 50px;
+  margin-top: 30px;
+}
+.border h2{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: start;
+  margin-inline-start: 20px;
+}
+.side-pic{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+}
+.side-pic img{
+  height: 200px;
+  width: 300px;
+}
+.icon{
+  position: relative;
+}
+.icon img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* O kahit anong iba pang halaga */
+}
+.label {
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0; /* I-set ang right sa 0 upang umangkop sa buong lapad ng parent container */
+  text-align: center;
+  height: 30px;
+  margin: 0;
+  width: auto;
+  justify-content: center; /* Kung ito ay bahagi ng isang flex container */
+  background-color: #006F0B;
+}
+.label h1{
+  font-size: 25px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  width: 80%; 
+  max-width: 1000px; 
+  margin: 1% auto; 
+  min-height: 200px; /* Set a minimum height or adjust as needed */
+  border-radius: 20px;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  margin-top: 20px;
+}
+
+.grid-item {
+  background-color: #eee8e8;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+
+
+/* .faq{
+  width: 80%; 
+  max-width: 1000px; 
+  margin: 1% auto; 
+  height: 200px;
+  border-radius: 20px;
+  position: absolute;
+  left: 20%;
+  display: none;
+} */
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.accordion-item {
+  background-color: #006F0B;
+  color: #ffffff;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #fff;
+  background-color: #006F0B;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
