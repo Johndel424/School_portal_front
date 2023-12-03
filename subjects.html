@@ -1,26 +1,29 @@
 <!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <title>Frequently Ask Question</title>
     <link rel="icon" type="image/x-icon" href="asset/imgs/logo.png">
     <link rel="shortcut icon" type="image/x-icon" href="asset/imgs/logo.png">
-    <title>DashBoard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manjari&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+  
     <!-- Boxicons CSS -->
     <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <script src="script.js" defer></script>
   </head>
   <body>
-
+    <input type="checkbox" id="check">
+<!--header area start-->
 <header>
 
 </header>
@@ -70,40 +73,123 @@
 </div>
 <!--sidebar end-->
 
-
 <div class="content">
-    <div class="card-list">
-        <a href="#" class="card-item">
-            <img src="asset/imgs/attendance (1).png" alt="Card Image">
-            <h3>Attendance</h3>
-        </a>
-        <a href="#" class="card-item">
-            <img src="asset/imgs/notications.png" alt="Card Image">
-            <h3>Notifications</h3>
-        </a>
-        <a href="#" class="card-item">
-            <img src="asset/imgs/profile (1).png" alt="Card Image">
-            <h3>Profile</h3>
-        </a>
-        <a href="#" class="card-item">
-            <img src="asset/imgs/grades (1).png" alt="Card Image">
-            <h3>Grades</h3>
-        </a>
-        <a href="#" class="card-item">
-            <img src="asset/imgs/it.png" alt="Card Image">
-            <h3>Enrollment</h3>  
-        </a>
-        <a href="#" class="card-item">
-            <img src="asset/imgs/document.png" alt="Card Image">
-            <h3>Documents</h3>
-        </a>
-    </div>
-   
+    <h1>Subjects Enrolled </h1>
+    <div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Code</th>
+                <th>Description</th>
+                <th>Lec Unit</th>
+                <th>Lab Unit</th>
+                <th>Credit Unit</th>
+                <th>Secttion</th>
+                <th>Schedule</th>
+                <th>Teacher</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>IT 301</td>
+                <td>Application Development and Emergencing Technologies</td>
+                <td>2</td>
+                <td>1</td>
+                <td>3</td>
+                <td>BSIT-3B</td>
+                <td>W 9:00AM - 12:00PM<br> F 9:00AM - 11:00AM</td>
+                <td>Delos Santos, Meldex S. Jr.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>IT 302</td>
+                <td>Social and Professional Issues</td>
+                <td>3</td>
+                <td>0</td>
+                <td>3</td>
+                <td>BSIT-3B</td>
+                <td> M 1:00 PM - 4:00 PM</td>
+                <td>Dery, Ramil D.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>IT 303A</td>
+                <td>System Analysis and Technologies</td>
+                <td>2</td>
+                <td>1</td>
+                <td>3</td>
+                <td>BSIT-3B</td>
+                <td>Th 7:00 AM - 9:00 AM <br> Th 9:00 AM - 12:00 PM</td>
+                <td>Delos Santos, Sheryl Ellamil</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>IT 304</td>
+                <td>Web Systems and Technologies 1</td>
+                <td>2</td>
+                <td>1</td>
+                <td>3</td>
+                <td>BSIT-3B</td>
+                <td>S 8:00 AM - 10:00 AM <br> S 10:30 AM - 1:30 PM</td>
+                <td>Medina, Jerome F.</td>
+
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>IT 305</td>
+                <td>Quantitative Methods</td>
+                <td>3</td>
+                <td>0</td>
+                <td>3</td>
+                <td>BSIT-3B</td>
+                <td>S 2:00 PM - 5:00 PM</td>
+                <td>Tamayo, Josan D. </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>IT 306</td>
+                <td>Elective 1</td>
+                <td>2</td>
+                <td>1</td>
+                <td>3</td>
+                <td>BSIT-3B</td>
+                <td>T 7:00 AM - 9:00 AM <br> F 3:00 PM - 6:00 PM</td>
+                <td>Mabanta, Michael John D.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>IT 307</td>
+                <td>Elective 2</td>
+                <td>2</td>
+                <td>1</td>
+                <td>3</td>
+                <td>BSIT-3B</td>
+                <td>T 9:00 AM - 11:00 AM<br>T 12:00 PM - 3:00 PM</td>
+                <td>Mabanta, Michael John D.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>FL 301</td>
+                <td>Foreign Language 1</td>
+                <td>3</td>
+                <td>0</td>
+                <td>3</td>
+                <td>BSIT-3B</td>
+                <td>M 8:00 AM - 11:00 AM</td>
+                <td>Chu, Jing</td>
+            </tr>
+
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
 </div>
+</div> 
 
-
+  
 <script>
-var clickMeDiv = document.getElementById('clickMe2');
+   var clickMeDiv = document.getElementById('clickMe2');
         var contentDiv = document.getElementById('hidden2');
     
         clickMeDiv.addEventListener('click', function() {
@@ -139,6 +225,9 @@ var clickMeDiv = document.getElementById('clickMe2');
            }
        });
    });
-    </script>
-  </body>
+   
+   </script>
+
+
+</body>
 </html>

@@ -10,6 +10,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="asset/imgs/logo.png">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manjari&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
   
     <!-- Boxicons CSS -->
     <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -19,27 +25,26 @@
     <input type="checkbox" id="check">
 <!--header area start-->
 <header>
-    <!-- <label for="check">
-        <i class="fas fa-bars" id="sidebar_btn"></i>
-    </label>
-    <div class="left_area">
-        <h3>Go<span>Snippets</span></h3>
-    </div>
-    <div class="right_area">
-        <a href="#" class="logout_btn">Logout</a>
-    </div> -->
+
 </header>
 <!--header area end-->
 <!--mobile navigation bar start-->
 <div class="mobile_nav">
     <div class="nav_bar">
-        <img src="asset/imgs/FRAME.png" class="mobile_profile_image" alt="">
+        <img src="asset/imgs/boyyy.png" class="mobile_profile_image" alt="">
         <i id="mobile_nav_icon" class="fa fa-bars nav_btn"></i>
     </div>
     <div class="mobile_nav_items">
         <a href="dashboard.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
         <a href="calendar.html"><i class="fas fa-calendar"></i><span>Calendar</span></a>
-        <a href="student.html"><i class="fas fa-user"></i><span>Student</span></a>
+        <a  id="clickMe"><i class="fas fa-user" ></i>
+            <span>Student</span>
+            <i class="fas fa-caret-down" ></i>
+        </a>
+        <div id="hidden" class="hidden">
+        <a href="grades.html"><i class="fas fa-star "></i><span>Grades</span></a>
+        <a href="subjects.html"><i class="fas fa-book "></i><span>Subject</span></a>
+        </div>
         <a href="enrollment.html"><i class="fas fa-th"></i><span>Enrollment</span></a>
         <a href="faq.html"><i class="fas fa-info-circle"></i><span>FAQ</span></a>
           </div>
@@ -48,71 +53,173 @@
 <!--sidebar start-->
 <div class="sidebar">
     <div class="profile_info">
-        <img src="asset/imgs/FRAME.png" class="profile_image" alt="">
-        <h4>Joaquin Santos</h4>
+        <img src="asset/imgs/boyyy.png" class="profile_image" alt="">
+        <h4>Joaquin Dela Cruz</h4>
     </div>
     <a href="dashboard.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
     <a href="calendar.html"><i class="fas fa-calendar"></i><span>Calendar</span></a>
-    <a href="student.html"><i class="fas fa-user"></i><span>Student</span></a>
+    <a  id="clickMe2"><i class="fas fa-user" ></i>
+        <span >Student</span>
+        <i class="fas fa-caret-down" id="leftonti"></i>
+    </a>
+    <div id="hidden2" class="hidden2">
+    <a href="grades.html"><i class="fas fa-star "></i><span>Grades</span></a>
+    <a href="subjects.html"><i class="fas fa-book "></i><span>Subject</span></a>
+    </div>
+    
     <a href="enrollment.html"><i class="fas fa-th"></i><span>Enrollment</span></a>
-    <a href="faq.html"><i class="fas fa-info-circle"></i><span>FAQ</span></a>
+    <a href="faq.html"><i class="fas fa-info-circle"></i><span id="babakonti">FAQ</span></a>
+    <a href="faq.html"><span id="babakonti">FAQ</span></a>
 </div>
 <!--sidebar end-->
-
 <div class="content">
     <div class="content-div faq" id="faq">
+        <h1>Frequently Asked Question</h1>
         <div class="accordion ">
             <div class="accordion-item">
             <div class="accordion-item-header">
-            How to change  password?
+            How to Change Password?
             </div>
             <div class="accordion-item-body">
                 <div class="accordion-item-body-content">
-                To change your password, please follow these step procedures.
-                    Goto account setting
-                    Click the "change password" tab
-                    Enter your current password.
-                    Enter your new password.
-                    Re-enter your new password to confirm.
-                    Save the new password.
-                    Please take note that your password will expire exaclty 1 month, please change your password regularly.
-                            </div>
+                    To change your password, please follow these step procedures.<br> <br>
+                        1. Go to account setting<br>
+                        2. Click the <b>"Change Password"</b> tab.<br>
+                        3. Enter your current password.<br>
+                        4. Enter your new password.<br>
+                        5. Re-enter your new password to confirm.<br>
+                        6. Save the new password.<br> <br>
+                        Please take note that your password will expire exactly 1 month, please change your password regularly.
+                  </div>
             </div>
             </div>
             <div class="accordion-item">
             <div class="accordion-item-header">
-            How to change my user photo
+            How to Change User Photo?
             </div>
             <div class="accordion-item-body">
                 <div class="accordion-item-body-content">
-                To change your user photo, please follow these step procedures.
-                Goto account setting
-                Click the "change avatar" tab
-                select an image you want to upload
-                Click the submit button to confirm image.
-                Please take note that the system allows only an image file format with size not greater than 1mb.
+                    To change your user photo, please follow these step procedures. <br> <br>
+                    1. Go to account setting <br>
+                    2. Click the <b>"Change Avatar"</b> tab <br>
+                    3. Select an image you want to upload <br>
+                    4. Click the submit button to confirm image. <br> <br>
+                    Please take note that the system allows only an image file format with size not greater than 1mb. <br>
+                    </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <div class="accordion-item-header">
+            How to Update Personal Info?
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    To update your personal information, please follow these step procedures. <br><br>
+                    1. Go to <b>‘My Account’</b> after logging in to your Portal account. <br>
+                    2. Select the <b>‘Personal Information’</b> option.<br>
+                    3. Change Personal Information; make sure all required fields are completed. <br>
+                    4. Click on  to save changes.<br>
                 </div>
             </div>
             </div>
             <div class="accordion-item">
             <div class="accordion-item-header">
-            How to update personal info
+                User Agreement
             </div>
             <div class="accordion-item-body">
                 <div class="accordion-item-body-content">
-                Lorem ipsum dolor sit amet. Aut eius amet aut dolor odit et possimus aperiam qui deserunt voluptatum ad voluptas voluptas. Non quasi nobis ex iusto dolores et debitis voluptatem aut rerum ducimus et mollitia cumque aut earum molestiae sit laboriosam libero? Aut illum placeat ad vitae eius et reiciendis modi et magni inventore ut optio aliquam est voluptatem animi qui placeat nisi. In dolore culpa ea quia sunt ab exercitationem aperiam sed quibusdam dolores et odio beatae qui alias sint eos totam perferendis.
+                    <b><i>Personal Responsibility</b></i><br>
+                    
+                    We are pleased to offer the Dr. Felipe De Jesus National Highschool students access to the World Wide
+                    Web and other electronic networks. We believe that the advantages afforded by the rich, digital
+                    resources available today through the World Wide Web outweigh any disadvantage. However,
+                    access is a privilege, not a right, and carries with it responsibilities for all involved. Misuse
+                    means any violation of this agreement or any other use that is not included in the agreement
+                    but has the effect of harming another or his or her property. <br> <br>
+                    
+                    <b>Terms of the Agreement – In reference to our District Acceptable Use Policy</b><br>
+                    (CURRICULUM AND INSTRUCTION - Access to Electronic Media (Acceptable Use Policy) - 08.2323) <br><br>
+                    
+                    1. Acceptable and Unacceptable Uses: The District is providing access to its computer networks
+                    and the Internet for educational purposes only. If you have any doubt about whether a
+                    contemplated activity is educational, you may consult with the person(s) designated by the
+                    school to help you decide. <br><br>
+                    
+                    2. Privacy: Network and Internet access is provided as a tool for your education. The District
+                    reserves the right to monitor, inspect, copy, review and store at any time and without prior
+                    notice any and all usage of the computer network and Internet access and any and all
+                    information transmitted or received in connection with such usage. All such information files
+                    shall be and remain the property of the District and no user shall have any expectation of
+                    privacy regarding such materials. <br><br>
+                    
+                    <b><i> Failure to Follow the Agreement</b> </i><br><br>
+                    
+                    Use of the computer network and Internet is a privilege, not a right. A user who violates this
+                    agreement shall, at a minimum, have his or her access to the network and Internet terminated.
+                    The District may also take other disciplinary actions.
+                    Unacceptable Uses of the Network may include: <br><br>
+                    
+                    <i>a) Uses that cause harm to others or damage to their property.</i> For example, do not engage in
+                    defamation (harming another’s reputation by lies); do not employ another’s password or some
+                    other user identifier that misleads message recipients into believing that someone other than
+                    you is communicating or otherwise using his/her access to the network or the Internet; do not
+                    upload a work, virus, trojan horse, time bomb, or other harmful form of programming or
+                    vandalism; do not participate in hacking activities or any form of unauthorized access to other
+                    computers, networks, or information systems. <br><br>
+
+                <i>b) Uses that jeopardize the security of student access and of the computer network or other
+                    networks on the Internet.</i> For example, do not disclose or share your password with others; do
+                    not impersonate another user, etc. <br><br>
+
+                <i>c) Uses that are commercial transactions.</i> Students may not use the Lincoln County Schools
+                    network to sell or buy anything over the Internet. You shall not give others private information
+                    about yourself or others. <br><br>
+
+                    <b> Student Photos on the Student Portal </b> <br>
+                    
+                    Using student pictures on the Dr. Felipe De Jesus National Highschool website promotes learning,
+                    collaboration and provides an opportunity to share the achievements of students. However,
+                    safety of students is a priority. The school portal will follow all procedures for content,
+                    copyright and appropriateness per Web Publishing Procedures.
+                    Images of K-12 students may be included in the website without identifying captions or names.
+                    Websites may include full names for student work/honors without accompanying images. Any
+                    exceptions to this guideline will be communicated and signed-off by individual parents through
+                    Dr. Felipe De Jesus National Highschool personnel.
+                    Parents may opt out of any use of image/student work by indicating their wishes on this
+                    Internet Safety and Acceptable Use Agreement.<br><br>
+
+                    <b><i>Internet Safety</b></i><br><br>
+                    <b>• Parents and Users: </b> Despite every effort for supervision and filtering, all users and their
+                    parents/guardians are advised that access to the electronic network may include the potential
+                    for access to materials inappropriate for school-aged students. Every user must take
+                    responsibility for his or her use of the network and Internet and avoid these sites.<br><br>
+
+                    <b>• Personal Safety: </b> In using the network and Internet, users shall not reveal personal
+                    information such as home address or telephone number. Users shall never arrange a face-to face meeting with someone “met” on the computer network or the Internet without a parent’s
+                    permission if under 18 years of age.<br><br>
+
+                    <b>• “Hacking” and Other Illegal Activities:</b> It is a violation of this agreement to use the
+                    school’s computer network or the Internet to gain unauthorized access to other computers or
+                    computer systems, or to attempt to gain such unauthorized access. Any use which violates state
+                    or federal law relating to copyright, trade secrets, the distribution of obscene or pornographic
+                    materials, or which violates any other applicable law or public regulations is strictly prohibited.
+                    <br><br>
+                    <b>• Confidentiality of Student Information:</b> Personally identifiable information concerning
+                    students may not be disclosed or used in any way on the Internet without the permission of a
+                    parent or guardian, or, if the student is 18 or over, the permission of the student
+                    himself/herself. Users shall never give out private or confidential information about themselves
+                    or others on the Internet. A supervising teacher or administrator may authorize the release of
+                    directory information, as defined by law, for internal administrative purposes or approved
+                    educational projects or activities.
+                    <br><br>
+                    <b>• Active Restriction Measures:</b> The District will utilize filtering software or other technologies
+                    to prevent students from accessing visual depictions that are (1) obscene, (2) pornographic, or
+                    (3) harmful to minors. The school will also monitor the online activities of students, through
+                    direct observation and/or technological means.
+                    <br><br>
                 </div>
-            </div>
-            </div>
-            <div class="accordion-item">
-            <div class="accordion-item-header">
-                User agreement
-            </div>
-            <div class="accordion-item-body">
-                <div class="accordion-item-body-content">
-                Lorem ipsum dolor sit amet. Aut eius amet aut dolor odit et possimus aperiam qui deserunt voluptatum ad voluptas voluptas. Non quasi nobis ex iusto dolores et debitis voluptatem aut rerum ducimus et mollitia cumque aut earum molestiae sit laboriosam libero? Aut illum placeat ad vitae eius et reiciendis modi et magni inventore ut optio aliquam est voluptatem animi qui placeat nisi. In dolore culpa ea quia sunt ab exercitationem aperiam sed quibusdam dolores et odio beatae qui alias sint eos totam perferendis.
-                </div>
-            </div>
+                    </div>
+                    
             </div>
             <div class="accordion-item">
             <div class="accordion-item-header">
@@ -132,7 +239,30 @@
   </body>
 </html>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+   var clickMeDiv = document.getElementById('clickMe2');
+        var contentDiv = document.getElementById('hidden2');
+    
+        clickMeDiv.addEventListener('click', function() {
+          // Toggle the display property of the contentDiv
+          if (contentDiv.style.display === 'none' || contentDiv.style.display === '') {
+             contentDiv.style.display = 'block';
+          } else {
+            contentDiv.style.display = 'none';
+          }
+         });
+
+    var clickMeDiv2 = document.getElementById('clickMe');
+        var contentDiv2 = document.getElementById('hidden');
+    
+        clickMeDiv2.addEventListener('click', function() {
+          // Toggle the display property of the contentDiv
+          if (contentDiv2.style.display === 'none' || contentDiv2.style.display === '') {
+             contentDiv2.style.display = 'block';
+          } else {
+            contentDiv2.style.display = 'none';
+          }
+         });
+         document.addEventListener('DOMContentLoaded', function () {
        var navItems = document.querySelector('.mobile_nav_items');
        var navIcon = document.getElementById('mobile_nav_icon');
    
@@ -150,7 +280,6 @@
 accordionItemHeaders.forEach(accordionItemHeader => {
   accordionItemHeader.addEventListener("click", event => {
     
-    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
     
     const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
     if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {

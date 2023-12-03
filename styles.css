@@ -10,12 +10,19 @@ header {
     padding: 20px;
     width: calc(100% - 0%);
     top: 0;
+    font-family:'Manjari';
     height: 30px;
-    background-image: url('asset/imgs/school_bg.png'); /* Ilagay ang URL ng iyong background image */
+    background-image: url('asset/imgs/kath.png'); /* Ilagay ang URL ng iyong background image */
     background-size: 100% 100%; /* I-set ang background image na mag-fill sa buong sukat ng #container */
     background-repeat: no-repeat; /* Ito ay para maiwasan ang pag-repeated ng background image */
 }
-
+h1{
+  font-family:'Manjari';
+}
+span{
+  font-family:'Manjari';
+  font-weight: bold;
+}
 .left_area h3 {
     color: #fff;
     margin: 0;
@@ -71,16 +78,17 @@ header {
 }
 
 .sidebar .profile_info .profile_image {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 100px;
-    margin-bottom: 10px;
 }
 
 .sidebar .profile_info h4 {
-    color: #ccc;
+    color: #ffffff;
     margin-top: 0;
+    font-size: 20px;
     margin-bottom: 20px;
+    font-family: 'Marcellus SC';
 }
 
 .sidebar a {
@@ -254,9 +262,9 @@ label #sidebar_btn:hover {
     }
 }
 /* style sa reegistration */
+/* style sa enrollment */
 .enrollment{
     min-height: 100vh;
-    /* display: flex; */
     align-items: center;
     justify-content: end;
     display: none;
@@ -404,109 +412,17 @@ label #sidebar_btn:hover {
         width: 100%;
     }
   }
-  /* style sa reegistration */
-  .border{
-    width: 80%; 
-    max-width: 1000px; 
-    margin: 1% auto; 
-    height: 200px;
-    border-radius: 20px;
-    position: absolute;
-    left: 20%;
-    background-color: #00BA13;
-    
-  }
-  .border h1{
-  font-family: 'Courier New', Courier, monospace;
-  text-align: start;
-  margin-inline-start: 40px;
-  font-size: 50px;
-  margin-top: 30px;
-}
-.border h2{
-  font-family: 'Courier New', Courier, monospace;
-  text-align: start;
-  margin-inline-start: 20px;
-}
-.side-pic{
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: 0;
-}
-.side-pic img{
-  height: 200px;
-  width: 300px;
-}
-.icon{
-  position: relative;
-}
-.icon img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover; /* O kahit anong iba pang halaga */
-}
-.label {
-  font-family: 'Courier New', Courier, monospace;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0; /* I-set ang right sa 0 upang umangkop sa buong lapad ng parent container */
-  text-align: center;
-  height: 30px;
-  margin: 0;
-  width: auto;
-  justify-content: center; /* Kung ito ay bahagi ng isang flex container */
-  background-color: #006F0B;
-}
-.label h1{
-  font-size: 25px;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
-  padding: 20px;
-  width: 80%; 
-  max-width: 1000px; 
-  margin: 1% auto; 
-  min-height: 200px; /* Set a minimum height or adjust as needed */
-  border-radius: 20px;
-  position: absolute;
-  left: 20%;
-  top: 50%;
-  margin-top: 20px;
-}
-
-.grid-item {
-  background-color: #eee8e8;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-
-
-
-/* .faq{
-  width: 80%; 
-  max-width: 1000px; 
-  margin: 1% auto; 
-  height: 200px;
-  border-radius: 20px;
-  position: absolute;
-  left: 20%;
-  display: none;
-} */
+  /* style sa enrollment */
+  
+ /* style sa faq */
 .accordion {
   width: 90%;
   max-width: 1000px;
   margin: 2rem auto;
 }
 .accordion-item {
-  background-color: #006F0B;
-  color: #ffffff;
+  background-color: #fff;
+  color: #000000;
   margin: 1rem 0;
   border-radius: 0.5rem;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
@@ -544,6 +460,236 @@ label #sidebar_btn:hover {
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
 }
+ /* style sa faq */
+/* style sa dashboard */
+body {
+  background: #ecececdb;
+}
+.hidden {
+    display: none;
+  } 
+  .hidden2 {
+    display: none;
+  } 
+#border {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  background-color: #205c20;
+}
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  max-width: 1250px;
+  margin: 15px auto;
+  padding: 20px;
+  gap: 20px;
+}
+#leftonti{
+  margin-left: 80px;
+}
+.hidden-content{
+  display: none;
+}
+.card-list .card-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: border 0.5s ease;
+}
+.custom{
+  color: #000000;
+}
 
+.card-list .card-item:hover {
+  border: 2px solid #000;
+}
 
+.card-list .card-item img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  object-fit: cover;
+}
+#babakonti{
+  margin-bottom: 50px;
+}
 
+.card-list span {
+  display: inline-block;
+  background: #F7DFF5;
+  margin-top: 32px;
+  padding: 8px 15px;
+  font-size: 0.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.card-list .developer {
+  background-color: #F7DFF5; 
+  color: #B22485;
+}   
+
+.card-list .designer {
+  background-color: #d1e8ff;
+  color: #2968a8;
+}
+h3{
+  font-family: 'Manjari';
+  text-align: center;
+}
+
+.card-list .editor {
+  background-color: #d6f8d6; 
+  color: #205c20;
+}
+span{
+  font-family:'Manjari';
+  font-weight: bold;
+}
+
+.card-item h3 {
+  color: #000;
+  font-size: 1.438rem;
+  margin-top: 28px;
+  font-weight: 600;
+}
+
+.card-item .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-35deg);
+  height: 40px;
+  width: 40px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-top: 40px;
+  transition: 0.2s ease;
+}
+
+.card-list .card-item:hover .arrow  {
+  background: #000;
+  color: #fff; 
+}
+
+@media (max-width: 1200px) {
+  .card-list .card-item {
+      padding: 15px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .card-list {
+      margin: 0 auto;
+  }
+}
+/* style for dashbboard */
+/* style for dashbboard */
+
+/* style for dashbboard */
+  
+@media (max-width: 550px) {
+  .calendar{
+    left: 0;
+  }
+}
+  /* style sa calendar */
+.calendar {
+    font-family: 'Arial', sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+   
+    text-align: center;
+    color: #000;
+    position: absolute;
+  }
+  /* .calendar{
+    width: 80%; 
+    max-width: 1000px; 
+    margin: 1% auto; 
+    border-radius: 20px;
+    position: absolute;
+    left: 20%;
+    display: none;
+  } */
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+   
+  }
+
+  th {
+    
+     padding: 10px;
+    text-align: center;
+    color: #000000;
+    width: calc(100% / 7); 
+  }
+ td {
+    border: #000;
+    padding: 10px;
+   text-align: end;
+   font-weight: 600;
+border: 1px solid #c3c3c3; /* Add this line for borders */
+text-align: right;
+background-color: rgb(222, 255, 226);
+    vertical-align: top;
+   color: #000000;
+   width: calc(100% / 7); 
+ }
+  th {
+    background-color: #006F0B;
+    color: #fff;
+border: 1px solid #c3c3c3; /* Add this line for borders */
+  }
+
+  td {
+    cursor: pointer;
+  }
+
+  td:hover {
+    background-color: #47ce559e;
+  }
+  caption {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+ /* style sa calendar */
+ /* style sa table */
+ .table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #006F0B;
+  color: #ddd;
+}
+
+@media (max-width: 600px) {
+  th, td {
+      font-size: 12px;
+  }
+}
+ /* style sa table */

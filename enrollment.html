@@ -6,11 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enrollment Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+  
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
     <link rel="icon" type="image/x-icon" href="asset/imgs/logo.png">
     <link rel="shortcut icon" type="image/x-icon" href="asset/imgs/logo.png">
     <!-- Boxicons CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manjari&display=swap" rel="stylesheet">
+   
     <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <script src="script.js" defer></script>
   </head>
@@ -18,27 +26,26 @@
     <input type="checkbox" id="check">
 <!--header area start-->
 <header>
-    <!-- <label for="check">
-        <i class="fas fa-bars" id="sidebar_btn"></i>
-    </label>
-    <div class="left_area">
-        <h3>Go<span>Snippets</span></h3>
-    </div>
-    <div class="right_area">
-        <a href="#" class="logout_btn">Logout</a>
-    </div> -->
+
 </header>
 <!--header area end-->
 <!--mobile navigation bar start-->
 <div class="mobile_nav">
     <div class="nav_bar">
-        <img src="asset/imgs/FRAME.png" class="mobile_profile_image" alt="">
+        <img src="asset/imgs/boyyy.png" class="mobile_profile_image" alt="">
         <i id="mobile_nav_icon" class="fa fa-bars nav_btn"></i>
     </div>
     <div class="mobile_nav_items">
         <a href="dashboard.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
         <a href="calendar.html"><i class="fas fa-calendar"></i><span>Calendar</span></a>
-        <a href="student.html"><i class="fas fa-user"></i><span>Student</span></a>
+        <a  id="clickMe"><i class="fas fa-user" ></i>
+            <span>Student</span>
+            <i class="fas fa-caret-down" ></i>
+        </a>
+        <div id="hidden" class="hidden">
+        <a href="grades.html"><i class="fas fa-star "></i><span>Grades</span></a>
+        <a href="subjects.html"><i class="fas fa-book "></i><span>Subject</span></a>
+        </div>
         <a href="enrollment.html"><i class="fas fa-th"></i><span>Enrollment</span></a>
         <a href="faq.html"><i class="fas fa-info-circle"></i><span>FAQ</span></a>
           </div>
@@ -47,14 +54,23 @@
 <!--sidebar start-->
 <div class="sidebar">
     <div class="profile_info">
-        <img src="asset/imgs/FRAME.png" class="profile_image" alt="">
-        <h4>Joaquin Santos</h4>
+        <img src="asset/imgs/boyyy.png" class="profile_image" alt="">
+        <h4>Joaquin Dela Cruz</h4>
     </div>
     <a href="dashboard.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
     <a href="calendar.html"><i class="fas fa-calendar"></i><span>Calendar</span></a>
-    <a href="student.html"><i class="fas fa-user"></i><span>Student</span></a>
+    <a  id="clickMe2"><i class="fas fa-user" ></i>
+        <span >Student</span>
+        <i class="fas fa-caret-down" id="leftonti"></i>
+    </a>
+    <div id="hidden2" class="hidden2">
+    <a href="grades.html"><i class="fas fa-star "></i><span>Grades</span></a>
+    <a href="subjects.html"><i class="fas fa-book "></i><span>Subject</span></a>
+    </div>
+    
     <a href="enrollment.html"><i class="fas fa-th"></i><span>Enrollment</span></a>
-    <a href="faq.html"><i class="fas fa-info-circle"></i><span>FAQ</span></a>
+    <a href="faq.html"><i class="fas fa-info-circle"></i><span id="babakonti">FAQ</span></a>
+    <a href="faq.html"><span id="babakonti">FAQ</span></a>
 </div>
 <!--sidebar end-->
 
@@ -210,7 +226,30 @@
   </body>
 </html>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    var clickMeDiv = document.getElementById('clickMe2');
+        var contentDiv = document.getElementById('hidden2');
+    
+        clickMeDiv.addEventListener('click', function() {
+          // Toggle the display property of the contentDiv
+          if (contentDiv.style.display === 'none' || contentDiv.style.display === '') {
+             contentDiv.style.display = 'block';
+          } else {
+            contentDiv.style.display = 'none';
+          }
+         });
+
+    var clickMeDiv2 = document.getElementById('clickMe');
+        var contentDiv2 = document.getElementById('hidden');
+    
+        clickMeDiv2.addEventListener('click', function() {
+          // Toggle the display property of the contentDiv
+          if (contentDiv2.style.display === 'none' || contentDiv2.style.display === '') {
+             contentDiv2.style.display = 'block';
+          } else {
+            contentDiv2.style.display = 'none';
+          }
+         });
+         document.addEventListener('DOMContentLoaded', function () {
        var navItems = document.querySelector('.mobile_nav_items');
        var navIcon = document.getElementById('mobile_nav_icon');
    
@@ -223,6 +262,5 @@
            }
        });
    });
-   
    
    </script>
