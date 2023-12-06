@@ -57,7 +57,7 @@ span{
 .sidebar {
     z-index: 1;
     top: 0;
-    background-color: #006F0B;
+    background-color: #5180C4;
     margin-top: 70px;
     padding-top: 30px;
     position: fixed;
@@ -205,7 +205,7 @@ label #sidebar_btn:hover {
     }
 
     .nav_bar {
-      background-color: #006F0B;
+      background-color: #5180C4;
         width: (100% - 0px);
         margin-top: 70px;
         display: flex;
@@ -233,7 +233,7 @@ label #sidebar_btn:hover {
     }
 
     .mobile_nav_items {
-      background-color: #006F0B;
+      background-color: #5180C4;
         display: none;
     }
 
@@ -283,7 +283,7 @@ label #sidebar_btn:hover {
     height: 3px;
     width: 27px;
     border-radius: 8px;
-    background-color: #006F0B;
+    background-color: #5180C4;
   }
   .container form{
     position: relative;
@@ -371,7 +371,7 @@ label #sidebar_btn:hover {
     color: #fff;
     border-radius: 5px;
     margin: 25px 0;
-    background-color: #006F0B;
+    background-color: #5180C4;
     transition: all 0.3s linear;
     cursor: pointer;
   }
@@ -380,7 +380,7 @@ label #sidebar_btn:hover {
     font-weight: 400;
   }
   form button:hover{
-    background-color: #006F0B;
+    background-color: #5180C4;
   }
   form button i,
   form .backBtn i{
@@ -436,7 +436,7 @@ label #sidebar_btn:hover {
   align-items: center;
   position: relative;
   color: #fff;
-  background-color: #006F0B;
+  background-color: #5180C4;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -473,7 +473,7 @@ body {
   } 
 #border {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  background-color: #205c20;
+  background-color: #5180C4;
 }
 .card-list {
   display: grid;
@@ -543,7 +543,7 @@ h3{
 
 .card-list .editor {
   background-color: #d6f8d6; 
-  color: #205c20;
+  color: #5180C4;
 }
 span{
   font-family:'Manjari';
@@ -646,7 +646,7 @@ background-color: rgb(222, 255, 226);
    width: calc(100% / 7); 
  }
   th {
-    background-color: #006F0B;
+    background-color: #5180C4;
     color: #fff;
 border: 1px solid #c3c3c3; /* Add this line for borders */
   }
@@ -656,7 +656,7 @@ border: 1px solid #c3c3c3; /* Add this line for borders */
   }
 
   td:hover {
-    background-color: #47ce559e;
+    background-color: #5180C4;
   }
   caption {
     text-align: center;
@@ -683,7 +683,7 @@ th, td {
 }
 
 th {
-  background-color: #006F0B;
+  background-color: #5180C4;
   color: #ddd;
 }
 
