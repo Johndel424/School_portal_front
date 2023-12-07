@@ -69,9 +69,10 @@ body{
         margin-top: 50px;
         height: 35px;
         width: 250px;
-        font-family: 'Courier New', Courier, monospace;
+        color: #ffffff;
+        font-family: 'Roboto Condensed', sans-serif;
         margin-inline-start: 25px;
-        background-color: rgba(4, 171, 255, 0.433)
+        background-color: rgb(37, 61, 240);
       }
       .loginbtn h1{
         font-size: 30px;
@@ -101,9 +102,10 @@ body{
         position: relative;
         height: 35px;
         width: 250px;
-        font-family: 'Courier New', Courier, monospace;
+        color: #ffffff;
+        font-family: 'Roboto Condensed', sans-serif;
         margin-inline-start: 25px;
-        background-color: rgba(12, 180, 226, 0.433)
+        background-color: rgb(37, 61, 240);
       }
       .createbtn h1{
         font-size: 25px;  
